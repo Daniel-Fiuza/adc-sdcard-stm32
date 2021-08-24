@@ -4,11 +4,11 @@ MDDOs.h:90:14:void MDDOs::sleep(uint32_t)	32	static
 ADC.h:26:14:void ADCManager::setFactor(float)	16	static
 Application.cpp:44:6:void PiscaLED()	8	static
 Application.cpp:57:6:void SDCARDLoop()	216	static
-Application.cpp:109:33:void __tcf_0()	8	static
-Application.cpp:108:6:void ADCLoop()	24	static
-Application.cpp:129:6:static void Application::Run()	8	static
-Application.cpp:144:6:void getNameFile(RTC_HandleTypeDef*, char*)	64	static
-Application.cpp:155:6:void error_handle(int)	16	static
-Application.cpp:160:1:void __static_initialization_and_destruction_0(int, int)	16	static
-Application.cpp:160:1:cpp)	8	static
-Application.cpp:160:1:cpp)	8	static
+Application.cpp:104:33:void __tcf_0()	8	static
+Application.cpp:103:6:void ADCLoop()	24	static
+Application.cpp:124:6:static void Application::Run()	8	static
+Application.cpp:140:6:void getNameFile(RTC_HandleTypeDef*, char*)	64	static
+Application.cpp:151:6:void error_handle(int)	16	static
+Application.cpp:156:1:void __static_initialization_and_destruction_0(int, int)	16	static
+Application.cpp:156:1:cpp)	8	static
+Application.cpp:156:1:cpp)	8	static

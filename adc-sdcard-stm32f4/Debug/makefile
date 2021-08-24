@@ -86,8 +86,8 @@ all: main-build
 main-build: adc-sdcard-stm32f4.elf secondary-outputs
 
 # Tool invocations
-adc-sdcard-stm32f4.elf: $(OBJS) $(USER_OBJS) /home/daniel/Documentos/adc-sdcard-stm32/adc-abdi/STM32F407ZGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "adc-sdcard-stm32f4.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/daniel/Documentos/adc-sdcard-stm32/adc-abdi/STM32F407ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="adc-sdcard-stm32f4.map" -Wl,--gc-sections -static -Wwrite-strings -Wreturn-type --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+adc-sdcard-stm32f4.elf: $(OBJS) $(USER_OBJS) /home/administrador/Documentos/adc-sdcard-stm32/adc-sdcard-stm32f4/STM32F407ZGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "adc-sdcard-stm32f4.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/administrador/Documentos/adc-sdcard-stm32/adc-sdcard-stm32f4/STM32F407ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="adc-sdcard-stm32f4.map" -Wl,--gc-sections -static -Wwrite-strings -Wreturn-type --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

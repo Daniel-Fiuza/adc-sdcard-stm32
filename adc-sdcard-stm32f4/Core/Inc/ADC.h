@@ -76,7 +76,7 @@ private:
 	float factor = 0.0; // fator de conversão
 	const uint16_t RESOLUTION = 4096;
 	const float VMAX = 3.22;
-	const float alpha = 0.1; // coeficiente de filtragem
+	const float alpha = 0.2; // coeficiente de filtragem
 
 	// minmax RAM
 	uint16_t max_val;

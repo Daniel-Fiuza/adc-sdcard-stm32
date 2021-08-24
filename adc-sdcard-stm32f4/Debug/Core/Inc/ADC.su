@@ -5,9 +5,9 @@ ADC.cpp:24:6:void ADCManager::convert()	16	static
 ADC.cpp:30:6:void ADCManager::setChannel(uint32_t, uint8_t)	40	static
 ADC.cpp:40:6:void ADCManager::filter()	24	static
 ADC.cpp:51:7:float ADCManager::getVolts()	16	static
-ADC.cpp:60:10:uint16_t ADCManager::getRaw()	16	static
-ADC.cpp:64:10:uint16_t ADCManager::getFiltered()	16	static
-ADC.cpp:69:10:uint16_t ADCManager::getPercentage(bool)	24	static
-ADC.cpp:83:6:void ADCManager::UpdateMinMax()	16	static
-ADC.cpp:99:6:void ADCManager::readFromMemory()	16	static
-ADC.cpp:106:6:void ADCManager::writeToMemory()	16	static
+ADC.cpp:58:10:uint16_t ADCManager::getRaw()	16	static
+ADC.cpp:62:10:uint16_t ADCManager::getFiltered()	16	static
+ADC.cpp:67:10:uint16_t ADCManager::getPercentage(bool)	24	static
+ADC.cpp:81:6:void ADCManager::UpdateMinMax()	16	static
+ADC.cpp:97:6:void ADCManager::readFromMemory()	16	static
+ADC.cpp:104:6:void ADCManager::writeToMemory()	16	static

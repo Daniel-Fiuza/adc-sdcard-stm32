@@ -36,9 +36,9 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define RTC_KEY 0xddd6 // PARA REPROGRAMAR O RTC, BASTA MUDAR ESSA CHAVE
-uint8_t day = 5, month = RTC_MONTH_AUGUST, year = 21, weekday = RTC_WEEKDAY_THURSDAY;
-uint8_t hours= 21, minutes = 43, seconds = 30;
+#define RTC_KEY 0xddd5 // PARA REPROGRAMAR O RTC, BASTA MUDAR ESSA CHAVE
+uint8_t day = 24, month = RTC_MONTH_AUGUST, year = 21, weekday = RTC_WEEKDAY_TUESDAY;
+uint8_t hours= 9, minutes = 43, seconds = 30;
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -267,7 +267,7 @@ static void MX_ADC1_Init(void)
   }
   /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
   */
-  sConfig.Channel = ADC_CHANNEL_1;
+  sConfig.Channel = ADC_CHANNEL_9;
   sConfig.Rank = 1;
   sConfig.SamplingTime = ADC_SAMPLETIME_3CYCLES;
   if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)

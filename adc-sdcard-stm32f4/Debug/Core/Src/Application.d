@@ -47,7 +47,7 @@ Core/Src/Application.o: ../Core/Src/Application.cpp \
  ../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h \
  ../Middlewares/Third_Party/FatFs/src/diskio.h \
  ../Middlewares/Third_Party/FatFs/src/ff.h ../FATFS/Target/sd_diskio.h \
- /home/daniel/Documentos/adc-sdcard-stm32/adc-abdi/Core/MDDOs/MDDOs.h \
+ /home/administrador/Documentos/adc-sdcard-stm32/adc-sdcard-stm32f4/Core/MDDOs/MDDOs.h \
  ../Core/Inc/ADC.h ../Core/Inc/FlashHelper.h
 
 ../Core/Inc/Application.h:
@@ -158,7 +158,7 @@ Core/Src/Application.o: ../Core/Src/Application.cpp \
 
 ../FATFS/Target/sd_diskio.h:
 
-/home/daniel/Documentos/adc-sdcard-stm32/adc-abdi/Core/MDDOs/MDDOs.h:
+/home/administrador/Documentos/adc-sdcard-stm32/adc-sdcard-stm32f4/Core/MDDOs/MDDOs.h:
 
 ../Core/Inc/ADC.h:
 

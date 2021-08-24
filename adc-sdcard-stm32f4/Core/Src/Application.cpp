@@ -85,20 +85,15 @@ void SDCARDLoop() {
 			return;
 		}
 	} else { // cartão OK aqui
-
-		// Armazena buffer lora no SDCard
-		if (g_saveSD) {
-			getNameFile(&hrtc, file_name);
-			sprintf(write_text, "%f", g_vbat);
-			fres = sdcard.write_file(file_name, write_text,sizeof(write_text));
-			if (fres != FR_OK) {
-				f_mount(0, "", 0);
-				initSDCard = false;
-				printf("Erro ao escrever arquivo: %s\r\n", file_name);
-			} else {
-				printf("Escrito com sucesso no arquivo: %s\r\n", file_name);
-			}
-			g_saveSD = false;
+		getNameFile(&hrtc, file_name);
+		sprintf(write_text, "%f", g_vbat);
+		fres = sdcard.write_file(file_name, write_text,sizeof(write_text));
+		if (fres != FR_OK) {
+			f_mount(0, "", 0);
+			initSDCard = false;
+			printf("Erro ao escrever arquivo: %s\r\n", file_name);
+		} else {
+			printf("Escrito com sucesso no arquivo: %s\r\n", file_name);
 		}
 	}
 
@@ -116,9 +111,9 @@ void ADCLoop() {
 
 //	adc.setChannel(ADC_CHANNEL_1, 1);
 	adc.convert();
-//	adc.filter();
-	adc.setFactor((float) (12.6/4096));	// ADC_resolucao / (Vmax - Vmin)
-	adc_value = adc.getRaw();
+	adc.filter();
+	adc.setFactor((float) (13.425/4096));	// ADC_resolucao / (Vmax - Vmin)
+	adc_value = adc.getFiltered();
 	g_vbat = adc.getVolts();
 	printf("[ADC] value: %d, vbat: %f\r\n",adc_value, g_vbat);
 
@@ -128,6 +123,7 @@ void ADCLoop() {
 
 void Application::Run() {
 
+	printf("Definindo tarefas\r\n");
 	OS.RegisterTask(PiscaLED, "led", 4096);
 //	OS.RegisterTask(PiscaLED2, "led2", 1024); // DEBUG
 	OS.RegisterTask(SDCARDLoop, "sdcard", 8192);

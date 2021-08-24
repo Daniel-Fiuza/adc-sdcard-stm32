@@ -10,7 +10,7 @@
 ADCManager::ADCManager(ADC_HandleTypeDef *hadc_, uint32_t flash_offset_) :
 		adc_handle(hadc_), flash_offset(flash_offset_) {
 	// Recebe valores da flash
-	readFromMemory();
+//	readFromMemory();
 }
 
 ADCManager::~ADCManager() {
@@ -50,11 +50,9 @@ void ADCManager::filter() {
 // recebe saida em volts
 float ADCManager::getVolts() {
 
-	if (factor != 0.0) {
-		return (adc_last_filtered_value * factor);
-	} else {
-		return (adc_last_filtered_value * VMAX) / RESOLUTION;
-	}
+//	return (adc_last_raw_value * factor);
+	return (adc_last_filtered_value * factor);
+//		return (adc_last_filtered_value * VMAX) / RESOLUTION;
 }
 
 uint16_t ADCManager::getRaw() {
