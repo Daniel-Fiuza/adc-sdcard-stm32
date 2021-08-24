@@ -1,0 +1,13 @@
+ADC.cpp:10:1:ADCManager::ADCManager(ADC_HandleTypeDef*, uint32_t)	24	static
+ADC.cpp:16:1:ADCManager::~ADCManager()	16	static
+ADC.cpp:16:1:virtual ADCManager::~ADCManager()	16	static
+ADC.cpp:24:6:void ADCManager::convert()	16	static
+ADC.cpp:30:6:void ADCManager::setChannel(uint32_t, uint8_t)	40	static
+ADC.cpp:40:6:void ADCManager::filter()	24	static
+ADC.cpp:51:7:float ADCManager::getVolts()	16	static
+ADC.cpp:60:10:uint16_t ADCManager::getRaw()	16	static
+ADC.cpp:64:10:uint16_t ADCManager::getFiltered()	16	static
+ADC.cpp:69:10:uint16_t ADCManager::getPercentage(bool)	24	static
+ADC.cpp:83:6:void ADCManager::UpdateMinMax()	16	static
+ADC.cpp:99:6:void ADCManager::readFromMemory()	16	static
+ADC.cpp:106:6:void ADCManager::writeToMemory()	16	static

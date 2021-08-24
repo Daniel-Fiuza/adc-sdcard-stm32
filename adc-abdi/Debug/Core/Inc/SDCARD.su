@@ -1,0 +1,10 @@
+SDCARD.cpp:10:1:SDCARD::SDCARD()	16	static
+SDCARD.cpp:14:1:SDCARD::~SDCARD()	16	static
+SDCARD.cpp:14:1:virtual SDCARD::~SDCARD()	16	static
+SDCARD.cpp:19:9:FRESULT SDCARD::delete_file(const char*)	16	static
+SDCARD.cpp:24:9:FRESULT SDCARD::count_files(const char*, int&)	80	static
+SDCARD.cpp:45:9:FRESULT SDCARD::scan_files(const char*, char*)	80	static
+SDCARD.cpp:72:9:FRESULT SDCARD::write_file(const char*, const char*, unsigned int)	24	static
+SDCARD.cpp:97:9:FRESULT SDCARD::read_file(const char*, char*)	32	static
+SDCARD.cpp:125:9:FRESULT SDCARD::mount_disk(const char*)	16	static
+SDCARD.cpp:130:9:FRESULT SDCARD::unmount_disk()	16	static
