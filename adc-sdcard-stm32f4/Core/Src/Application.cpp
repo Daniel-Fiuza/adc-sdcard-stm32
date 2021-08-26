@@ -16,12 +16,10 @@
 #include "ADC.h"
 
 // Estruturas Hardware
-extern UART_HandleTypeDef huart3;
 extern UART_HandleTypeDef huart1;
 extern RTC_HandleTypeDef hrtc;
 extern RTC_DateTypeDef date;
 extern RTC_TimeTypeDef time;
-extern I2C_HandleTypeDef hi2c1;
 extern ADC_HandleTypeDef hadc1;
 extern SD_HandleTypeDef hsd;
 
